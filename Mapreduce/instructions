@@ -1,0 +1,35 @@
+
+1-
+il faut créer un  le reposotoy mdhaoui dans /tmp 
+
+il faut mettre listmachines.txt la dedans 
+
+scp -p listmachines.txt /tmp/mdhaoui 
+
+il faut executer 
+cp -r /cal/homes/mdhaoui/tmp/mdhaoui/* /tmp/mdhaoui/
+
+
+
+on creer les dossiers dans chaque machines
+ssh mdhaoui@c133-23 mkdir -p /tmp/mdhaoui2 
+
+copier le fichier slave.jar dans /tmp/mdhaoui
+scp -p SLAVE.jar /tmp/mdhaoui
+
+
+créer les splits dans le dossier /tmp/mdhaoui
+mkdir /tmp/mdhaoui/splits
+scp -p S*  /tmp/mdhaoui/splits
+
+
+scp -p /tmp/mdhaoui/splits/S*.txt mdhaoui@c133-23:/tmp/mdhaoui/splits
+
+CTR+D : POUR quitter une session ssh
+
+
+
+java -jar SLAVE.jar "map" "S0.txt" 
+
+rm -r /splits/*
+
