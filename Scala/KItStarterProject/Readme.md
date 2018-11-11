@@ -14,13 +14,13 @@ val input = ".../trainingset"
 ```
 
 
-## Afin d'exécuter le programme Trainer.scala depuis IntelliJ , il faut aller à l'onglet "terminal" et tapper : 
+### Afin d'exécuter le programme Trainer.scala depuis IntelliJ , il faut aller à l'onglet "terminal" et tapper : 
 
 ```
 ./build_and_submit.sh Trainer
 ```
 
-## Le programme devrait prendre entre 5 et 7 minutes pour s'éxécuter . A la fin , on obtient le score ci-dessous : 
+### Le programme devrait prendre entre 5 et 7 minutes pour s'éxécuter . A la fin , on obtient le score ci-dessous : 
 
 **F1 score = 0.655**
 
