@@ -15,3 +15,8 @@ Finally, we are interested in comparing these distributions for different progra
 Differences in distributions could reflect differences in the availability of documentation. 
 For example, StackOverflow could have better documentation for a certain library than that library's API documentation.
 However, to avoid invalid conclusions we will focus on the well-defined problem of clustering answers according to their scores.
+
+
+For this pproject , you also need to download the data (170 MB):
+
+http://alaska.epfl.ch/~dockermoocs/bigdata/stackoverflow.csv
